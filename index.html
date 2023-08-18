@@ -1,157 +1,207 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
+
+</html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css./style-web.css">
-    <link rel="stylesheet" href="./css./style-web2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style-web.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Website</title>
 </head>
 
 <body>
+
     <div class="container">
-        <header>
-            <div class="col-md-8"><img src="./image/Group 32.png" alt="Logo"></div>
-            <div class="col-md-4">
-                <ul class="menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Localização</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Segmentos</a></li>
-                </ul>
+        <nav  class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand col-8" href="#"><img src="./image/Group32.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-4" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Localização</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Segmentos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </header>
+        </nav>
     </div>
+
     <section id="banner">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
-                    <img src="./image/Group (1).png" alt="banner">
+                <div class="col-7">
+                    <img src="./image/Group(1).png" alt="banner">
                 </div>
-                <div class="col-md-5">
-                    <h1>Transformação
-                    Digital</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <div class="col-5">
+                    <h1>Transformação Digital</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        beenthe industry's standard dummy text ever since the 1500s.
+                    </p>
+                    <button class="btn btn1 btn-outline-secondary" onclick="notifyMe()">Ativar Notificações</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="localization">
+    <section id="local">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h2>Localização</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non a dicta debitis quasi rerum autaliquid commodi voluptas nesciunt amet natus.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard.</p>
                 </div>
-            </div>
-            <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14606.214808841496!2d-46.72379031491768!3d-23.763289418566888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1691618883160!5m2!1spt-BR!2sbr" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-        </div>
-    </section>
-
-    <section id="service">
-        <div class="container ">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Serviços</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non a dicta debitis quasi rerum aut aliquid commodi voluptas nesciunt amet natus.</p>
-                </div>
-            </div>
-            <div id="tottem" class="row">
-                <div id="card" class="col-md-3">
-                    <h4>UX-Design</h4>
-                    <small>o Web Development o SaaS Platform Development o Full Stack Development We create innovative solutions<br>
-                        to solve customer problems and giving you more control over product.</small>
-                </div>
-                <div id="card" class="col-md-3">
-                    <h4>Front-end</h4>
-                    <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</small>
-                </div>
-                <div id="card" class="col-md-3">
-                    <h4>Test</h4>
-                    <small>Designing success through creative web design for your business to be the best.<br> Improving customer
-                        engagement with enhanced user experience.</small>
-                </div>
-                <div id="card" class="col-md-3">
-                    <h4>Delivery</h4>
-                    <small>Develop your MVP with our experts who help create a solution that solves customer problems.<br> We fill
-                        in the technology gaps for you.</small>
+                <div class="row">
+                    <div class="col-12">
+                        <iframe id="obter-localizacao"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d82616.4870715583!2d-46.68936884187014!3d-23.777052897605657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1692212930467!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="segment">
+    <section id="servico">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h2>Segmentos</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non a dicta debitis quasi rerum aut aliquid
-                        commodi voluptas nesciunt amet natus.</p>
+                <div class="col">
+                    <h2>Serviços</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard</p>
                 </div>
             </div>
-            <div id="segText" class="row">
-                <div class="col-md-4">
-                    <img id="vetor" src="./image/Group.png" alt="vetor">
+            <div class="row">
+                <div class="col-3 card">
+                    <span>01</span>
+                    <div>
+                        <h3>UX Design</h3>
+                        <p>O Web Development o SaaS Platform Development o Full Stack Development <br />We create
+                            innovative
+                            solutions to solve customer problems and giving you more control over product.</p>
+                    </div>
+                </div>
+                <div class="col-3 card">
+                    <span>02</span>
+                    <h3>Front-end</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="col-3 card">
+                    <span>03</span>
+                    <h3>Test</h3>
+                    <p>Designing success through creative web design for your business to be the best. Improving
+                        customer engagement with enhanced user experience.</p>
+                </div>
+                <div class="col-3 card">
+                    <span>04</span>
+                    <h3>Delivery</h3>
+                    <p>Develop your MVP with our experts who help create a solution that solves customer problems. We
+                        fill in the technology gaps for you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="segmentos">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Segmentos</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's</p>
+                </div>
+            </div>
+            <div class="row" id="text">
+                <div class="col-4">
+                    <img src="./image/Group.png" alt="">
                     <h4>E-commerce</h4>
                     <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial
-                        operations and business workflows. With e-commerce solutions, ERPS and improvised customer services.
-                    </p>
+                        operations and business workflows. With e-commerce solutions, ERPS and improvised customer
+                        services.</p>
                 </div>
-                <div id="segText" class="col-md-4">
-                    <img id="vetor" src="./image/Group (2).png" alt="vetor">
-                    <h4>Fintechs</h4>
+                <div class="col-4">
+                    <img src="./image/Group(6).png" alt="">
+                    <h4>FinTechs</h4>
                     <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial
-                        operations and business workflows. With e-commerce solutions, ERPS and improvised customer services.
-                    </p>
+                        operations and business workflows.
+                        With e-commerce solutions, ERPS and improvised customer services.</p>
                 </div>
-                <div id="segText" class="col-md-4">
-                    <img id="vetor" src="./image/Group (3).png" alt="vetor">
+                <div class="col-4">
+                    <img src="./image/Group(5).png" alt="">
                     <h4>Mobilidade</h4>
                     <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial
-                        operations and business workflows. With e-commerce solutions, ERPS and improvised customer services.
-                    </p>
+                        operations and business workflows. With e-commerce solutions, ERPS and improvised customer
+                        services.</p>
                 </div>
-            </div>
-            <div id="segText" class="row">
-                <div class="col-md-4">
-                    <img id="vetor" src="./image/Group (4).png" alt="vetor">
+            </div><br />
+            <div class="row" id="textTo">
+                <div class="col-4">
+                    <img src="./image/Group(4).png" alt="" id="vetor">
                     <h4>Entretenimento</h4>
                     <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial
-                        operations and business workflows. With e-commerce solutions, ERPS and improvised customer services.
-                    </p>
+                        operations and business workflows. With e-commerce solutions, ERPS and improvised customer
+                        services.</p>
                 </div>
-                <div id="segText" class="col-md-4">
-                    <img id="vetor" src="./image/Group (5).png" alt="vetor">
+                <div class="col-4">
+                    <img src="./image/Group(3).png" alt="">
                     <h4>Direito</h4>
                     <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial
-                        operations and business workflows. With e-commerce solutions, ERPS and improvised customer services.
-                    </p>
+                        operations and business workflows. With e-commerce solutions, ERPS and improvised customer
+                        services.</p>
                 </div>
-                <div id="segText" class="col-md-4">
-                    <img id="vetor" src="./image/Group (6).png" alt="vetor">
+                <div class="col-4">
+                    <img src="./image/Group(2).png" alt="">
                     <h4>Hospitalidade</h4>
                     <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial
-                        operations and business workflows. With e-commerce solutions, ERPS and improvised customer services.
-                    </p>
+                        operations and business workflows. With e-commerce solutions, ERPS and improvised customer
+                        services.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="foot">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8"><img src="./image/Group 32.png" alt="Logo"></div>
-                <div class="col-md-4">&copy;copyright 2022 | All Rights Reserved</div>
+    <footer id="footer">
+        <div class="row">
+            <div class="col-9">
+                <img src="./image/Group32.png" alt="">
+            </div>
+            <div class="col-3">
+                <p>© Copyright 2022 | All Rights Reserved</p>
             </div>
         </div>
     </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+    <script src="./js/geolocation.js"></script>
+    <script src="./js/notification.js"></script>
+   
+    
 </body>
 
 </html>

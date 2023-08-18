@@ -1,125 +1,210 @@
-
-
-html {
-    font-size: 62.5%;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-size: 1.6rem;
-}
-
-.container {
-    width: 990px;
-    margin: 0 auto;
-    
-}
-
-header {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    padding: 35px 180px 100px 57px;
-    height: 188px;
-   
-}
-
-.menu {
-    padding-right: 40px;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-ul li {
-    margin: auto calc(34px / 2);
-    line-height: 17px;
-}
-
-ul li a{
-    text-decoration: none!important;
-    color: #000000;
-    font-size: 14px;
-}
-
-h1 {
-    color: #1A1A1A !important;
-    font-family:sans-serif;
-    font-size: 62px!important;
-    font-style: normal;
-    font-weight: 700!important;
-    line-height: 78px!important;
-}
-
-h1 {
-    padding: 42px 15px 160px  !important;
-    width: 504px!important;
-    height: 156px!important;
-    
-}
-
-#banner p{
-    color: #595959 !important;
-    font-family: sans-serif!important;
-    font-size: 30px !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    line-height: 43.88px !important;
-    width: 504px!important;
-    height: 156px!important;
-    top: 536px !important;
-    left: 1093px !important;
-    padding: 42px 15px 160px  !important;
-
-    
-}
-
-h2 {
-    text-align: center !important;
-    color: #1A1A1A;
-    font-family: sans-serif !important;
-    font-size: 48px !important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    line-height: 58.51px !important;
-    padding-top: 300px;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 #banner img {
-    width: 500px;
-    height: 480px;
-    Top: 374.59px;
-    Left: 300.14px;
-    flex-shrink: 0;
-
+    width: 100%;
+    padding-top: 160px;
 }
 
-#localization p {
+h1 {
+    font-size: 64px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #1A1A1A;
+    padding-top: 188px;
+}
+
+#banner p {
     color: #595959;
-    font-family: sans-serif;
-    font-size: 30px;
-    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
     font-weight: 400;
-    line-height: 43px;
-    padding-top: 42px !important;
+    text-align: left;
+    line-height: 44px;
 }
 
-#localization {
-    display: flex;
-    padding: 6px;
-    height: 1021px;
-    text-align: center!important;
+.btn1 {
+    color: #0074FF!important;
 }
-    
 
-#map {
-    height: 400px; /* altura desejada para o mapa */
-    width: 100%; /* para ocupar a largura total do container */
-    margin: 0 auto; /* centralizar horizontalmente */
+
+#local h2{
+    color: #1A1A1A;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 58px;
+    text-align: center;
+    padding-top: 321px;
+}
+
+#local p {
+    color: #595959;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: center;
+    padding-top: 42px;
+}
+
+iframe {
+    width: 100%;
     padding-top: 78px;
-  }
+    align-items: center;
+}
+
+#servico h2 {
+    color: #1A1A1A;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    padding-top: 319px;
+}
+
+#servico p {
+    color: #595959;
+    font-size: 36px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+    padding-top: 42px;
+}
+
+h3 {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 44px;
+    color: #FFFFFF;
+    padding-top: 105px;
+    margin-right: 46px!important;
+}
+
+.card p {
+    color: #FFF!important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px!important;
+    font-weight: 400!important;
+    line-height: 22px!important;
+    text-align: left!important;
+    padding-top: 70px;
+    padding-bottom: 77px;
+    height: 176px;
+    margin-left: 22px!important;
+
+}
+
+.card {
+    border: 1px solid #0074FF;
+    background-color: #0074FF;
+    width: 250px;
+    height: 448px;
+    margin: 13px;
+}
+
+span {
+    color: rgba(26, 26, 26, .10);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 175px;
+
+}
+
+
+#segmentos h2 {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 58px;
+    color: #1A1A1A;
+    padding-top: 221px;
+}
+
+#segmentos p {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 44px;
+    color: #595959;
+    padding-bottom: 111px;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 29px;
+    color: #000000;
+    padding-left: 28.5px;
+    padding-top: 8px;
+}
+
+#text p {
+    color: #595959;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 28.5px;
+}
+
+#textTo p {
+    color: #595959;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 28.5px;
+}
+
+
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: #1A1A1A;
+    top: 4320px;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-top: 67px;
+}
+
+footer img {
+    padding-top: 57px;
+    padding-left: 206px;
+}
+
+
+@media (max-width: 576px) { 
+    body {
+        display: block;
+    }
+ }
+
+
