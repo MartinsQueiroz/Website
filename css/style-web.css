@@ -229,38 +229,3 @@ footer img {
 }
 
 
-@media (max-width: 768px){
-    .container-fluid {  
-        width:100%;
-        height: auto;
-        text-align: center;
-    }  
-
-    
-
-}
-
-@media (max-width: 320px){
-    .menu a{  
-        display: flex!important;
-        width:100%!important;
-        height: auto!important;
-        text-align: center!important;
-        align-items: center!important;
-        justify-content: center!important;
-    } 
-
-    header{
-        text-align: center!important;
-    }
-
-    section{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-}
- 
-
