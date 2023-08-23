@@ -17,43 +17,33 @@
 </head>
 
 <body>
-
     <div class="container">
-        <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-8" href="#"><img src="./image/Group32.png" alt=""></div>
-                    <div class="col-4">
-                        <ul class="menu">
-                            <li>
-                                <a href="#">Inicio</a>
-                            </li>
-                            <li>
-                                <a  href="#local">Localização</a>
-                            </li>
-                            <li>
-                                <a href="#servico">Serviços</a>
-                            </li>
-                            <li>
-                                <a href="#segmentos">Segmentos</a>
-                            </li>
-                        </ul>
-                    </div>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo"><img src="./image//Group32.png" alt="Logo"></div>
+            <!-- NAVEGAÇÃO MENU -->
+            <ul class="nav-links">
+                <!-- CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- NAVEGAÇÃO MENUS -->
+                <div class="menu">
+                    <li><a href="#" id="topo">Início</a></li>
+                    <li><a href="#local">Localização</a></li>
+                    <li class="services"><a href="#servico">Serviços</a></li>
+                    <li><a href="#segmentos">Segmentos</a></li>
                 </div>
-            </div>
-                
-        </header>
-        
-
+            </ul>
+        </nav>
     </div>
 
     <section id="banner">
         <div class="container">
             <div class="row">
-                <div class="col-7">
+                <div class="col-sm-7">
                     <img src="./image/Group(1).png" alt="banner">
                 </div>
-                <div class="col-5">
+                <div class="col-sm-5">
                     <h1>Transformação Digital</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                         beenthe industry's standard dummy text ever since the 1500s.
@@ -67,13 +57,13 @@
     <section id="local">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-sm-12">
                     <h2>Localização</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard.</p>
                 </div>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-sm-12">
                         <iframe id="obter-localizacao"
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d82616.4870715583!2d-46.68936884187014!3d-23.777052897605657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1692212930467!5m2!1spt-BR!2sbr"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -87,14 +77,14 @@
     <section id="servico">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-sm">
                     <h2>Serviços</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-3 card">
+                <div class="col-sm-3 card">
                     <span>01</span>
                     <div>
                         <h3>UX Design</h3>
@@ -103,19 +93,19 @@
                             solutions to solve customer problems and giving you more control over product.</p>
                     </div>
                 </div>
-                <div class="col-3 card">
+                <div class="col-sm-3 card">
                     <span>02</span>
                     <h3>Front-end</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s,</p>
                 </div>
-                <div class="col-3 card">
+                <div class="col-sm-3 card">
                     <span>03</span>
                     <h3>Test</h3>
                     <p>Designing success through creative web design for your business to be the best. Improving
                         customer engagement with enhanced user experience.</p>
                 </div>
-                <div class="col-3 card">
+                <div class="col-sm-3 card">
                     <span>04</span>
                     <h3>Delivery</h3>
                     <p>Develop your MVP with our experts who help create a solution that solves customer problems. We
@@ -128,28 +118,28 @@
     <section id="segmentos">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-sm-12">
                     <h2>Segmentos</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's</p>
                 </div>
             </div>
             <div class="row" id="text">
-                <div class="col-4">
+                <div class="col-sm-4">
                     <img src="./image/Group.png" alt="">
                     <h4>E-commerce</h4>
                     <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial
                         operations and business workflows. With e-commerce solutions, ERPS and improvised customer
                         services.</p>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4">
                     <img src="./image/Group(6).png" alt="">
                     <h4>FinTechs</h4>
                     <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial
                         operations and business workflows.
                         With e-commerce solutions, ERPS and improvised customer services.</p>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4">
                     <img src="./image/Group(5).png" alt="">
                     <h4>Mobilidade</h4>
                     <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial
@@ -158,21 +148,21 @@
                 </div>
             </div><br />
             <div class="row" id="textTo">
-                <div class="col-4">
+                <div class="col-sm-4">
                     <img src="./image/Group(4).png" alt="" id="vetor">
                     <h4>Entretenimento</h4>
                     <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial
                         operations and business workflows. With e-commerce solutions, ERPS and improvised customer
                         services.</p>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4">
                     <img src="./image/Group(3).png" alt="">
                     <h4>Direito</h4>
                     <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial
                         operations and business workflows. With e-commerce solutions, ERPS and improvised customer
                         services.</p>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4">
                     <img src="./image/Group(2).png" alt="">
                     <h4>Hospitalidade</h4>
                     <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial
@@ -185,10 +175,10 @@
 
     <footer id="footer">
         <div class="row">
-            <div class="col-9">
-                <img src="./image/Group32.png" alt="">
+            <div class="col-sm-9">
+                <a href="#topo"><img src="./image/Group32.png" alt="Rodape"></a>
             </div>
-            <div class="col-3">
+            <div class="col-sm-3">
                 <p>© Copyright 2022 | All Rights Reserved</p>
             </div>
         </div>
