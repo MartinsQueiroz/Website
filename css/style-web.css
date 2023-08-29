@@ -274,8 +274,73 @@ input[type=checkbox] {
     user-select: none;
 }
 
+#drop_zone {
+    text-align: center;
+    border: 5px solid #0074FF;
+    background-color: #000000;
+    color: #FFF;
+    width: 400px;
+    height: 200px;
+    margin-bottom: 15px;
+    margin-left: 450px;
+  }
+
+  #drop_zone:hover {
+    border-color: #595959;
+
+}
+
 /* APLICAÇÃO MEDIA QUERIES */
 @media (max-width: 768px) {
+    #banner h1 {
+        font-size: 30px;
+        text-align: -webkit-left;
+    }
+
+    #banner p {
+        font-size: 18px!important;
+        text-align: center!important;
+        line-height: 35px;
+        margin: -42px;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    #local h2 {
+        font-size: 33px;
+        padding-top: 200px;
+    }
+    
+    #local p {
+        font-size: 13px!important;
+        text-align: center!important;
+        line-height: none;
+    }
+
+    #servico h2 {
+        font-size: 33px;
+        padding-top: 300px;
+    }
+
+    #servico p {
+        font-size: 13px!important;
+        text-align: center!important;
+        line-height: none;
+    }
+
+    #segmentos h2 {
+        font-size: 33px!important;
+    }
+    #segmentos p {
+        font-size: 13px!important;
+        text-align: center!important;
+        line-height: none;
+    }
+
+    #segmentos h4 {
+        font-size: 14px;
+    }
+
     .menu {
         display: none;
         position: absolute;
@@ -315,29 +380,44 @@ input[type=checkbox] {
         font-size: 20px;
     }
 
+    section {
+        margin: 20px 50px;
+    }
+
+    #drop_zone {
+        display: flex!important;
+        justify-content: center!important;
+        width: 50%;
+        margin-left: 100px!important;
+         
+    }
+
+    #drop_zone p {
+        font-size: 1rem!important; 
+    }
+
     footer {
         height: 150px;
         width: 100%;
         background-color: #1A1A1A;
-        top: 4320px;
+        width: 500px!important;
+    }
+
+    footer img {
+        height: 80px;
+        padding-left: 0;
+        
+
+    }
+
+    footer p {
+        font-size: 6px!important;
+        padding-top: 0;
+        padding-left: 0;
     }
     
 
 }
 
-#drop_zone {
-    text-align: center;
-    border: 5px solid #0074FF;
-    background-color: #000000;
-    color: #FFF;
-    width: 400px;
-    height: 200px;
-    margin-bottom: 15px;
-    margin-left: 450px;
-  }
 
-  #drop_zone:hover {
-    border-color: #595959;
-
-  }
 
