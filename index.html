@@ -75,7 +75,7 @@
     </section>
 
     <section id="servico">
-        <div class="container">
+        <div class="container" ondragover="dragOver(event)" ondrop="drop(event)">
             <div class="row">
                 <div class="col-sm">
                     <h2>Serviços</h2>
@@ -84,32 +84,32 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3 card">
+                <div class="col-sm-3 card draggable" id="drag-1" draggable="true" ondragstart="dragStart(event)">
                     <span>01</span>
                     <div>
                         <h3>UX Design</h3>
-                        <p>O Web Development o SaaS Platform Development o Full Stack Development <br />We create
+                        <small>O Web Development o SaaS Platform Development o Full Stack Development <br />We create
                             innovative
-                            solutions to solve customer problems and giving you more control over product.</p>
+                            solutions to solve customer problems and giving you more control over product.</small>
                     </div>
                 </div>
-                <div class="col-sm-3 card">
+                <div class="col-sm-3 card" id="drag-2" draggable="true" ondragstart="dragStart(event)">
                     <span>02</span>
                     <h3>Front-end</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s,</p>
+                    <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s,</small>
                 </div>
-                <div class="col-sm-3 card">
+                <div class="col-sm-3 card" id="drag-3" draggable="true" ondragstart="dragStart(event)">
                     <span>03</span>
                     <h3>Test</h3>
-                    <p>Designing success through creative web design for your business to be the best. Improving
-                        customer engagement with enhanced user experience.</p>
+                    <small>Designing success through creative web design for your business to be the best. Improving
+                        customer engagement with enhanced user experience.</small>
                 </div>
-                <div class="col-sm-3 card">
+                <div class="col-sm-3 card" id="drag-4" draggable="true" ondragstart="dragStart(event)">
                     <span>04</span>
                     <h3>Delivery</h3>
-                    <p>Develop your MVP with our experts who help create a solution that solves customer problems. We
-                        fill in the technology gaps for you.</p>
+                    <small>Develop your MVP with our experts who help create a solution that solves customer problems. We
+                        fill in the technology gaps for you.</small>
                 </div>
             </div>
         </div>
@@ -172,13 +172,6 @@
             </div>
         </div>
     </section>
-    <div class="row">
-        <div class="col-sm-12"> 
-            <div id="drop_zone" ondrop="dropHandler(event);">
-                <p>Arraste e solte seu arquivo aqui</p>
-            </div>
-        </div>
-    </div>
    
 
     <footer id="footer">

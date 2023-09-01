@@ -1,22 +1,44 @@
-function dropHandler(event) {
-    console.log("File(s) dropped");
+
+
+function dragStart(event) {
+
+  console.log(event.dataTransfer);
+
+  event.dataTransfer.setData('text/plain', event.target.id);
+
+  event.currentTarget.style.backgroundColor = 'gray'
+}
+
+function dragOver(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  const id = event.dataTransfer.getData('text');
+  const draggableElement = document.getElementById(id);
+  const dropzone = event.target;
   
-    ev.preventDefault();
-  
-    if (event.dataTransfer.items) {
-      for (var i = 0; i < ev.dataTransfer.items.length; i++) {
-        if (event.dataTransfer.items[i].kind === "file") {
-          var file = event.dataTransfer.items[i].getAsFile();
-          console.log("... file[" + i + "].name = " + file.name);
-        }
-      }
-    } else {
-      for (var i = 0; i < event.dataTransfer.files.length; i++) {
-        console.log(
-          "... file[" + i + "].name = " + event.dataTransfer.files[i].name,
-        );
-      }
-    }
+  dropzone.appendChild(draggableElement);
+
+  event.dataTransfer.clearData()
+
+}
+
+window.addEventListener('resize', function(){
+
+
+  if(this.window.innerWidth < 420)
+  console.log('smartphone');
+  else if (this.window.innerWidth < 720)
+  console.log('tablet');
+  else {
+      console.log('desktop');
   }
+
+})
+
+
+
+
 
   
