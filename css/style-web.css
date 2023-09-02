@@ -275,6 +275,11 @@ input[type=checkbox] {
 }
 /* APLICAÇÃO MEDIA QUERIES */
 @media (max-width: 412px) {
+
+    body {
+        overflow: none;
+    }
+
     #banner h1 {
         font-size: 30px;
         text-align: justify!important;
@@ -491,7 +496,7 @@ input[type=checkbox] {
         background-color: #0074FF;
         width: 250px;
         height: 448px;
-        margin-left: 175px!important;
+        margin-left: 35px!important;
 }
 
     #segmentos h2 {
