@@ -282,7 +282,7 @@ input[type=checkbox] {
 
     #banner h1 {
         font-size: 20px;
-        text-align: justify!important;
+        text-align: left!important;
     }
 
     #banner p {
