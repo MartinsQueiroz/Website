@@ -273,25 +273,8 @@ input[type=checkbox] {
     font-size: 24px;
     user-select: none;
 }
-
-#drop_zone {
-    text-align: center;
-    border: 5px solid #0074FF;
-    background-color: #000000;
-    color: #FFF;
-    width: 400px;
-    height: 200px;
-    margin-bottom: 15px;
-    margin-left: 450px;
-  }
-
-  #drop_zone:hover {
-    border-color: #595959;
-
-}
-
 /* APLICAÇÃO MEDIA QUERIES */
-@media (max-width: 425px) {
+@media (max-width: 412px) {
     #banner h1 {
         font-size: 30px;
         text-align: justify!important;
@@ -353,6 +336,14 @@ input[type=checkbox] {
     #segmentos h4 {
         font-size: 14px;
         text-align: center;
+    }
+
+    .card {
+        border: 1px solid #0074FF;
+        background-color: #0074FF;
+        width: 250px;
+        height: 448px;
+        margin-left: 35px!important;
     }
 
     .menu {
@@ -438,9 +429,14 @@ input[type=checkbox] {
 }
 
 @media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
     #banner h1 {
-        font-size: 30px;
-        text-align: -webkit-left;
+        font-size: 50px;
+        text-align: justify!important;
+        
     }
 
     #banner p {
@@ -450,54 +446,86 @@ input[type=checkbox] {
         margin: -30px;
         padding-top: 55px;
         padding-bottom: 55px;
-        padding-left: 20px;
+        padding-left: 35px;
     }
 
     #local h2 {
         font-size: 33px;
         padding-top: 200px;
+        text-align: center;
     }
     
     #local p {
-        font-size: 13px!important;
-        text-align: center!important;
+        font-size: 18px!important;
+        text-align: justify!important;
         line-height: 20px;
+        padding-right: 20px;
     }
 
     #servico h2 {
         font-size: 33px;
         padding-top: 200px!important;
+        text-align: center;
     }
 
     #servico p {
-        font-size: 13px!important;
-        text-align: center!important;
+        font-size: 18px!important;
+        text-align: justify!important;
         line-height: 20px;
         padding-bottom: 42px;
         padding-right: 20px;
-        padding-left: 75px!important;
+        margin: -14px;
     }
 
     small {
         font-size: 13px!important;
-        text-align: center!important;
+        text-align: left!important;
         line-height: 20px;
         padding-bottom: 42px;
         padding-right: 20px;
         padding-left: 0!important;
     }
 
+    .card {
+        border: 1px solid #0074FF;
+        background-color: #0074FF;
+        width: 250px;
+        height: 448px;
+        margin-left: 175px!important;
+}
+
     #segmentos h2 {
         font-size: 33px!important;
-    }
-    #segmentos p {
-        font-size: 13px!important;
+        padding-top: 200px!important;
         text-align: center!important;
+    }
+
+    #segmentos p {
+        font-size: 18px!important;
+        text-align: justify!important;
         line-height: 20px;
+       
+    }
+
+    
+    #text p {
+        font-size: 13px!important;
+        text-align: justify!important;
+        line-height: 20px;
+        margin-right: -389px!important;
+    }
+
+    #textTo p {
+        font-size: 13px!important;
+        text-align: justify!important;
+        line-height: 20px;
+        margin-right: -389px!important;
     }
 
     #segmentos h4 {
+        text-align: center;
         font-size: 14px;
+        margin-right: -417px;
     }
 
     .menu {
@@ -529,7 +557,7 @@ input[type=checkbox] {
 
     img, svg {
         vertical-align: middle;
-        padding-left: 20px;
+        padding-left: 0;
     }
 
     input[type=checkbox]:checked~.menu {
