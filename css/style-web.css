@@ -439,8 +439,8 @@ input[type=checkbox] {
         overflow-x: hidden;
     }
     #banner h1 {
-        font-size: 50px;
-        text-align: justify!important;
+        font-size: 20px;
+        text-align: left!important;
         
     }
 
