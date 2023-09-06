@@ -285,7 +285,7 @@ input[type=checkbox] {
     user-select: none;
 }
 /* APLICAÇÃO MEDIA QUERIES */
-@media (min-width: 425px) and (max-width: 767px){
+@media (min-width: 375px) and (max-width: 767px){
 
     html {
         font-size: 62.2%;
@@ -454,7 +454,7 @@ input[type=checkbox] {
 }
 
 
-@media (min-width: 767px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 1023px){
 
     #banner h1 {
         font-size: 50px;
