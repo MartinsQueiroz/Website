@@ -285,10 +285,11 @@ input[type=checkbox] {
     user-select: none;
 }
 /* APLICAÇÃO MEDIA QUERIES */
-@media (min-width: 320px) and (max-width: 767px){
+
+@media (max-width: 480px){
 
     html {
-        font-size: 62.2%;
+        font-size: 16%;
     }
 
     body {
@@ -296,7 +297,196 @@ input[type=checkbox] {
     }
 
     #banner h1 {
+        font-size: 9rem;
+        text-align: left!important;
+    }
+
+    #banner p {
+        font-size: 6rem!important;
+        text-align: left!important;
+        line-height: 20px;
+        padding-top: 12px;
+        padding-bottom: 55px;
+        padding-left: 3px;
+    }
+
+    #local h2 {
+        font-size: 9rem;
+        text-align: center!important;
+        padding-top: 150px;
+    }
+    
+    #local p {
+        font-size: 6rem!important;
+        text-align: center!important;
+        line-height: 22px;
+        padding-top: 10px;
+    }
+
+    #servico h2 {
+        font-size: 9rem;
+        padding-top: 150px!important;
+        text-align: center;
+    }
+
+    #servico p {
+        font-size: 6rem!important;
+        text-align: center!important;
+        line-height: 20px;
+        padding-top: 10px;
+        padding-bottom: 42px;
+        
+    }
+
+    #segmentos h2 {
+        font-size: 9rem!important;
+        text-align: center;
+        padding-top: 150px;
+    }
+    #segmentos p {
+        font-size: 6rem!important;
+        text-align: center!important;
+        line-height: 22px;
+        padding-bottom: 42px;
+    }
+
+    h4 {
+        font-size: 6rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        line-height: 22px;
+        color: #000000;
+        padding-top: 8px;
+    }
+
+    #text p {
+        color: #595959;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 6rem!important;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center!important;;
+        padding-top: 15px;
+    }
+    
+    #textTo p {
+        color: #595959;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 6rem!important;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center!important;
+        padding-top: 15px;
+    }
+    
+
+    .card {
+        border: 1px solid #0074FF;
+        background-color: #0074FF;
+        width: 250px;
+        height: 448px;
+        
+    }
+
+    .card small {
+        font-size: 6rem!important;
+        margin-left: 6px!important;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #FFF;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        margin-top: 20px;
+    }
+
+    .menu li a:hover {
+        display: inline-block;
+        color: #0074FF;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 20px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .row {
+        display: block;
+        width: 100%;
+    }
+
+    .row .card {
+        margin: 25px 0 25px 0!important;
+    }
+
+    #banner {
         font-size: 20px;
+    }
+
+    #banner img {
+        width: 100vw;
+        max-width: 100%;
+        padding-top: 160px;
+        
+    }
+
+    section {
+        margin: 20px 50px;
+    }
+
+    
+    #segmentos img, svg {
+        vertical-align: middle;
+        padding-top: 150px;
+    }
+
+    footer {
+        height: 150px;
+        width: 100%!important;
+        background-color: #1A1A1A;
+    }
+
+    footer img {
+        height: auto;
+        max-width: 100%;
+        padding: 44px 50px 30px 74px;
+    }
+
+    footer p {
+        font-size: 4rem!important;
+        padding: 0 0;
+        text-align: center;
+    }
+    
+
+}
+
+
+@media (min-width: 480px) and (max-width: 767px){
+
+    html {
+        font-size: 16%;
+    }
+
+    body {
+        overflow: none;
+    }
+
+    #banner h1 {
+        font-size: 9rem;
         text-align: left!important;
     }
 
@@ -304,7 +494,6 @@ input[type=checkbox] {
         font-size: 18px!important;
         text-align: left!important;
         line-height: 20px;
-        margin: -30px;
         padding-top: 55px;
         padding-bottom: 55px;
         padding-left: 20px;
@@ -432,7 +621,7 @@ input[type=checkbox] {
 
     footer {
         height: 150px;
-        width: 412px!important;
+        width: 100%!important;
         background-color: #1A1A1A;
     }
 
@@ -614,8 +803,6 @@ input[type=checkbox] {
 
    
     footer img {
-        width: 100%;
-        max-width: 100%;
         padding-left: 0;
         
 
